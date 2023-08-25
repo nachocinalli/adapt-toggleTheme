@@ -1,0 +1,13 @@
+{
+  "comment": "Add to course.json",
+  "_toggleTheme": {
+    "_isEnabled": true,
+    "_navOrder": 101,
+    "_showLabel": true,
+    "navLabel": "Toggle theme",
+    "_navTooltip": {
+      "_isEnabled": true,
+      "text": "Toggle theme"
+    }
+  }
+}

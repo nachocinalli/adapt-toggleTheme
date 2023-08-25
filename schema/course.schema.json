@@ -1,0 +1,67 @@
+{
+  "$anchor": "toggleTheme-course",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$patch": {
+    "source": {
+      "$ref": "course"
+    },
+    "with": {
+      "properties": {
+        "_toggleTheme": {
+          "type": "object",
+          "title": "toggleTheme",
+          "default": {},
+          "required": [],
+          "properties": {
+            "_isEnabled": {
+              "type": "boolean",
+              "title": "Enable toggleTheme",
+              "description": "Controls whether the toggleTheme extension is enabled or disabled",
+              "default": true
+            },
+            "_navOrder": {
+              "type": "number",
+              "title": "Navigation bar order",
+              "description": "Determines the order in which the button is displayed in the navigation bar. Negative numbers (e.g. -100) are left-aligned. Positive numbers (e.g. 100) are right-aligned.",
+              "default": 100
+            },
+            "_showLabel": {
+              "type": "boolean",
+              "title": "Enable navigation bar button label",
+              "default": false
+            },
+            "navLabel": {
+              "type": "string",
+              "title": "Navigation bar button label",
+              "default": "",
+              "_adapt": {
+                "translatable": true
+              }
+            },
+            "_navTooltip": {
+              "type": "object",
+              "title": "Navigation tooltip",
+              "default": {},
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "title": "Enable tooltip for navigation button",
+                  "default": false
+                },
+                "text": {
+                  "type": "string",
+                  "title": "",
+                  "default": "",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-04/schema",
+	"id": "http://jsonschema.net",
+	"required": false,
+	"properties": {
+		"pluginLocations": {
+			"type": "object",
+			"required": true,
+			"properties": {
+				"config": {
+					"type": "object"
+				},
+				"course": {
+					"type": "object",
+					"properties": {
+						"_toggleTheme": {
+							"type": "object",
+							"required": false,
+							"legend": "Toggle Theme",
+							"properties": {
+								"_isEnabled": {
+									"type": "boolean",
+									"required": true,
+									"default": true,
+									"title": "Is enabled",
+									"inputType": "Checkbox",
+									"validators": [],
+									"help": "Controls whether the toggleTheme extension is enabled or disabled."
+								},
+								"_navOrder": {
+									"type": "number",
+									"required": true,
+									"title": "Navigation bar order",
+									"help": "Determines the order in which the button is displayed in the navigation bar. Negative numbers (e.g. -100) are left-aligned. Positive numbers (e.g. 100) are right-aligned.",
+									"default": 100,
+									"inputType": "Text"
+								},
+								"_showLabel": {
+									"type": "boolean",
+									"required": true,
+									"default": false,
+									"title": "Enable navigation bar button label",
+									"inputType": "Checkbox",
+									"help": "Controls whether a label is shown on the navigation bar button."
+								},
+								"navLabel": {
+									"type": "string",
+									"required": true,
+									"default": "",
+									"title": "Navigation bar button label",
+									"inputType": "Text",
+									"translatable": true
+								},
+								"_navTooltip": {
+									"type": "object",
+									"title": "Navigation tooltip",
+									"properties": {
+										"_isEnabled": {
+											"type": "boolean",
+                      "inputType": "Checkbox",
+											"title": "Enable tooltip for navigation button",
+											"default": false
+										},
+										"text": {
+											"type": "string",
+											"title": "",
+											"default": "",
+                      "inputType": "Text",
+											"translatable": true
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"contentobject": {
+					"type": "object"
+
+				},
+				"article": {
+					"type": "object"
+				},
+				"block": {
+					"type": "object"
+				},
+				"component": {
+					"type": "object"
+				}
+			}
+		}
+	}
+}

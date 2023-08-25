@@ -1,0 +1,15 @@
+{
+  "name": "adapt-toggleTheme",
+  "version": "1.0.0",
+  "framework": ">=5.19.1",
+  "homepage": "https://github.com/nachocinalli/adapt-toggleTheme",
+  "bugs": "https://github.com/adaptlearning/nachocinalli/adapt-toggleTheme/issues",
+  "extension": "toggleTheme",
+  "displayName": "ToggleTheme",
+  "description": "An extension to toggle between light and dark theme",
+  "main": "/js/adapt-toggleTheme.js",
+  "keywords": ["adapt-plugin", "adapt-extension"],
+  "license": "GPL-3.0",
+  "targetAttribute": "_toggleTheme",
+  "private": true
+}
